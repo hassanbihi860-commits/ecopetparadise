@@ -37,7 +37,8 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.55);
+  /* Lighten the overlay for improved readability */
+  background: rgba(0, 0, 0, 0.45);
   z-index: 0;
 }
 
@@ -116,7 +117,9 @@ h1, h2, h3, h4, h5, h6 {
   transition: transform 0.2s ease;
   border-radius: 0.5rem;
   overflow: hidden;
-  border: none;
+  /* Add a subtle border and light background to distinguish cards */
+  border: 1px solid #e9ecef;
+  background: #ffffff;
 }
 
 .blog-card:hover {
@@ -128,6 +131,15 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 200px;
   object-fit: cover;
+}
+
+/* Article page images */
+.article-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .blog-card .card-body {
